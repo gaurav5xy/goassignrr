@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "assignment-generator"
+version = "0.1.0"
+description = "The project generate the assignment and essay according to user given topics"
+authors = ["Gaurav Kumar"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+whitenoise = {extras = ["brotli"], version = "^6.5.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

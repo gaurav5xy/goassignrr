@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Generated and Download Assignment with AI{% endblock %}
+
+{% block content %}
+    <h1>Generated Assignment</h1>
+    <div class="assignment-text mt-3">
+        {{ assignment_text | safe }}
+    </div>
+{% endblock %}

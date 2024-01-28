@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(172.57deg, rgba(125, 144, 185, 0.2), rgba(60, 98, 224, 0.2)), linear-gradient(270deg, #475e87 22.93%, #405780 60.43%);
+  box-shadow: 100px 50px 200px #1f3a5f inset;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.content {
+  margin: 20px;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Roboto Serif";
+  color: #c8c9d3;
+}
+
+button {
+  margin: 10px;
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+}
+
+button > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+button:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+button:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+/* For all social containers */
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* Instagram */
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* Twitter */
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* LinkedIn */
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* WhatsApp */
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  body{
+    height: 100vh;
+  }
+  .content {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 41px;
+  }
+
+  button {
+    height: 37px;
+    width: 120px;
+  }
+
+  .svg-icon {
+    height: 27px;
+    width: 27px;
+    margin-left: 0px;
+  }
+
+  .text {
+    font-size: 27px;
+  }
+
+  .socialContainer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .socialSvg {
+    width: 25px;
+  }
+}

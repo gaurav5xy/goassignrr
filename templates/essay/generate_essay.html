@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Generated and Download Essay with AI{% endblock %}
+
+{% block content %}
+    <h1>Generated Essay</h1>
+    <div class="essay-text mt-3">
+        {{ essay_text | safe }}
+    </div>
+{% endblock %}
